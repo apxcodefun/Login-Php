@@ -31,8 +31,8 @@
             <?php foreach($mahasiswa as $mhs) :?>
             <td><?=$i?></td>
             <td>
-                <a href="ubah.php">Update</a> |
-                <a href="hapus.php?id=<?=$mhs['id'];?>">Hapus</a>
+                <a href="ubah.php?id=<?=$mhs['id'];?>">Update</a> |
+                <a href="hapus.php?id=<?=$mhs['id'];?>" onclick="return confirm('yakin?');">Hapus</a>
             </td>
             <td><img src="/php/gambar/<?=$mhs['gambar']; ?>" width="50"></td>
             <td><?=$mhs['nrp'];?></td>
